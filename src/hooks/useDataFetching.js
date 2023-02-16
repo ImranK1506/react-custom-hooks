@@ -18,7 +18,6 @@ function useDataFetching(dataSource) {
       } catch (e) {
         setLoading(false);
         setError(e.message);
-        console.log('error')
       }
     }
     fetchData();
@@ -27,4 +26,4 @@ function useDataFetching(dataSource) {
   return [loading, data, error];
 }
 
-export default useDataFetching();
+export default useDataFetching;

@@ -11,8 +11,8 @@ const lanes = [
 
 function Board() {
   const [loading, tasks, error] = useDataFetching(
-    'https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/tasks'
-  );
+    `https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/tasks`
+  )
 
   return (
     <div className='Board-wrapper'>
