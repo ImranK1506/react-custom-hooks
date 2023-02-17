@@ -1,6 +1,6 @@
 import './Task.css';
 
-function Task({ id, onDragStart, title, body }) {
+function Task({ id, title, body, onDragStart }) {
   return (
     <div className='Task-wrapper'
          draggable
