@@ -46,6 +46,7 @@ function Board() {
     <div className='Board-wrapper'>
       {lanes.map((lane) => (
         <Lane key={lane.id}
+              laneId={lane.id}
               title={lane.title}
               loading={loading}
               error={error}

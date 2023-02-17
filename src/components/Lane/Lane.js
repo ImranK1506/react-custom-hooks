@@ -3,7 +3,10 @@ import './Lane.css';
 
 function Lane({ laneId, title, loading, error, tasks, onDragStart, onDragOver, onDrop }) {
   return (
-    <div className='Lane-wrapper'>
+    <div className='Lane-wrapper'
+         onDragOver={onDragOver}
+         onDrop={(e) => onDrop(e, laneId)}
+    >
       <h2>{title}</h2>
       {loading || error ? (
         <span>{error || 'Loading...'}</span>
@@ -15,8 +18,6 @@ function Lane({ laneId, title, loading, error, tasks, onDragStart, onDragOver, o
             title={task.title}
             body={task.body}
             onDragStart={onDragStart}
-            onDragOver={onDragOver}
-            onDrop={(e) => onDrop(e, laneId)}
           />
         ))
       )}
