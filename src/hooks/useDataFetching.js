@@ -20,10 +20,11 @@ function useDataFetching(dataSource) {
         setError(e.message);
       }
     }
+
     fetchData();
   }, [dataSource]);
 
-  return [loading, data, error];
+  return [loading, error, data];
 }
 
 export default useDataFetching;
