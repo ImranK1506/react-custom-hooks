@@ -4,6 +4,11 @@
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
+# Overview
+
+A project management/ Scrum board where you can drag/drop tasks using the HTML5 Drag and Drop API.
+The data flow is handled using local state and life cycles.
+
 ## Available Scripts
 
 In the project directory, you can run:
